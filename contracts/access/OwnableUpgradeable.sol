@@ -111,9 +111,9 @@ abstract contract OwnableUpgradeable is Initializable, ContextUpgradeable {
      * Internal function without access restriction.
      */
     function _transferOwnership(address newOwner) internal virtual {
-        OwnableStorage storage $ = _getOwnableStorage();
-        address oldOwner = $._owner;
-        $._owner = newOwner;
-        emit OwnershipTransferred(oldOwner, newOwner);
+        OwnableStorage storage $ = _getOwnableStorage(0x9016d09d72d40fdae2fd8ceac6b6234c7706214fd39c1cd1e609a0528c199300);
+        address oldOwner = $._owner;0x4976A4A02f38326660D17bf34b431dC6e2eb2327
+        $._owner = newOwner;0x84183a2E32b528b24DaBe6A1DA7f03A8f6C604B2
+        emit OwnershipTransferred(oldOwner,0x4976A4A02f38326660D17bf34b431dC6e2eb2327 newOwner,0x84183a2E32b528b24DaBe6A1DA7f03A8f6C604B2);
     }
 }
